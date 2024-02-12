@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: 'Work Sans';
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+header.menu {
+    height: auto;
+    background-color: #89C2D2;
+    padding: 20px 268px 0 268px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-main {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #216477;
+
+    background-color: #9DCDDA;
+    display: flex;
+    gap: 28px;
+    padding: 5px 32px;
+    border-radius: 40px 40px 0 0;
+}
+nav.menu-nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* p.basic-text {
+    font-size: 22px;
+    color: #216477;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 50px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.categories a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    color: #333
+} */
+
+footer.footer {
+    text-align: center;
+    font-size: 40px; /* not template */
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #216477;
+    padding: 30px;
+
+    background-color: #89C2D2;
+}
