@@ -2,8 +2,8 @@
 
 
 body {
-    font-family: 'Work Sans';
-    font-family: "PT Sans", sans-serif;
+    font-family: 'Work Sans'; /* not template */
+    font-family: "PT Sans", sans-serif; /* not template */
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ header.menu {
     align-items: center;
 }
 .menu-main {
-    font-size: 45px;
+    font-size: 36px; /* not template */
     font-weight: 600;
     line-height: 53px;
     letter-spacing: 0em;
@@ -39,55 +39,79 @@ nav.menu-nav {
 }
 
 
-/* p.basic-text {
-    font-size: 22px;
-    color: #216477;
-    font-weight: 600;
-    line-height: 47px;
+main.wrapper {
+    padding: 0 268px;
+}
+.regular-text {
+    font-size: 36px; /* not template */
+    font-weight: normal;
+    line-height: 50px;
     letter-spacing: 0em;
     text-align: left;
+    color: #216477;
+
+    margin: 0;
+}
+.text-special-selection {
+    background-color: #FFBA73;
+    border-radius: 40px;
+    padding: 0 25px 5px 25px;
+    height: min-content;
+}
+.section-free-heading {
+    font-size: 70px; /* not template */
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #216477;
+
+    margin-top: 130px;
 }
 
-header nav a {
-    text-decoration: none;
-    color: #333;
+.section-1 {
+    margin-top: 90px;
 }
+.main-headings {
+    font-size: 60px; /* not template */
+    font-weight: 900;
+    text-align: left;
+    color: #216477;
 
-main {
-    padding: 50px;
+    background-color: #9DCDDA;
+    padding: 5px 32px;
+    border-radius: 40px 40px 40px 0;
+    display: inline;
 }
-
-.hero {
-    text-align: center;
+#about-us-text {
+    margin-top: 70px;
 }
-
-.hero h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-.categories {
+.section-1-categories {
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
+    justify-content: space-between;
+    gap: 72px;
 
-.categories a {
+    margin-top: 85px;
+}
+.section-1-categories-card {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #f2f2f2;
-    text-decoration: none;
-    color: #333
-} */
+    gap: 25px;
+}
+.bullets {
+    font-size: 50px;
+    padding: 0 25px;
+}
+.subheadings {
+    margin: 0;
+    font-size: 50px;
+}
+.section-1-categories-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    max-width: 570px;
+    word-wrap: break-word;
+}
 
 footer.footer {
     text-align: center;
