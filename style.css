@@ -49,6 +49,7 @@ main.wrapper {
     letter-spacing: 0em;
     text-align: left;
     color: #216477;
+    word-wrap: break-word;
 
     margin: 0;
 }
@@ -69,7 +70,7 @@ main.wrapper {
     margin-top: 130px;
 }
 
-.section-1 {
+.sections {
     margin-top: 90px;
 }
 .main-headings {
@@ -83,7 +84,7 @@ main.wrapper {
     border-radius: 40px 40px 40px 0;
     display: inline;
 }
-#about-us-text {
+.description-text {
     margin-top: 70px;
 }
 .section-1-categories {
@@ -111,6 +112,69 @@ main.wrapper {
     gap: 23px;
     max-width: 570px;
     word-wrap: break-word;
+}
+
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 65px;
+    row-gap: 85px;
+    justify-content: space-between;
+
+    margin: 90px 0;
+}
+.articles-card a {
+    text-decoration: none;
+    color: #216477;
+}
+
+.articles-card {
+    border-radius: 40px;
+    overflow: hidden;
+}
+.articles-card-image {
+    height: 245px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.articles-card-description {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFBA73;
+    padding: 45px 45px 70px 45px;
+    width: 555px;
+    height: max-content;
+    gap: 40px;
+    min-height: 228px;
+
+    border-radius: 0 0 40px 40px;
+}
+.articles-card-description-heading {
+    margin: 0;
+}
+
+
+.button-more-articles {
+    background-color: #FFBA73;
+    border: none;
+    border-radius: 40px;
+}
+.button-text {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #216477;
+
+    display: flex;
+    gap: 20px;
+
+    padding: 8px 28px
 }
 
 footer.footer {
