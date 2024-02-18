@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: 'Work Sans'; /* not template */
+    font-family: "PT Sans", sans-serif; /* not template */
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --headerback-color:#89C2D2;
+    --textcolor-color:#216477;
+    --headerbuttonback-color:#9DCDDA;
+    --filterandcardback-color:#FFBA73;
+    --filteramdcardback2-color:#F2F2F2;
+    --selectback-color:#D9D9D9;
+}
+
+*{
+    box-sizing: border-box; 
+}
+
+
+header.menu {
+    height: auto;
+    background-color: var(--headerback-color);
+    padding: 20px 268px 0 268px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-main {
+    font-size: 36px; /* not template */
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: var(--textcolor-color);
+
+    background-color: var(--headerbuttonback-color);
+    display: flex;
+    gap: 28px;
+    padding: 5px 32px;
+    border-radius: 40px 40px 0 0;
+}
+nav.menu-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.wrapper {
+    margin-top:135px ;
+    display: flex;
+    gap: 87px;
+    justify-content: center;
+}
+
+.filters{
+    min-height: 1100px;
+    width: 428px;
+    
+}
+
+.text-filter{
+    color: black;
+    font-size: 45px;
+    font-weight: 600;
+    background-color:var(--filterandcardback-color);
+    height: 100px;
+    line-height: 53px;
+    text-align: center;
+    padding-top: 24px;
+    border-radius: 40px 40px 0px 0px;
+    margin: 0;
+}
+
+.filter__list{
+    list-style: none;
+    background-color: var(--filteramdcardback2-color);
+    height: 1000px;
+    margin: 0;
+    border-radius: 0px 0px 40px 0px;
+}
+
+.filter__heading{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 53px;
+    text-align: left;
+    color: var(--textcolor-color);
+    margin: 0;
+    padding-top: 56px;
+}
+
+.filter__select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 0px 40px 40px 0px;
+    background-color: var(--selectback-color);
+    width: 315px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #21647799;
+    padding-left: 30px;
+    margin-top: 23px;
+    cursor: pointer;
+}
+
+.regular-text {
+    font-size: 36px; /* not template */
+    font-weight: normal;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #216477;
+    word-wrap: break-word;
+    font-weight: 600;
+    margin: 0;
+}
+.articles {
+    display: flex;
+    flex-direction: column;
+    column-gap: 65px;
+    row-gap: 85px;
+    justify-content: space-between;
+}
+.articles-card a {
+    text-decoration: none;
+    color: #216477;
+}
+
+.articles-card {
+    border-radius: 40px;
+    overflow: hidden;
+}
+.articles-card-image {
+    height: 245px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.articles-card-description {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFBA73;
+    padding: 20px 45px 70px 45px;
+    width: 846px;
+    height: max-content;
+    gap: 40px;
+    min-height: 228px;
+
+    border-radius: 0 0 40px 40px;
+}
+.articles-card-description-heading {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: left;
+    margin: 0;
+}
+
+
+.button-more-articles {
+    margin-top: 112px;
+    margin-bottom: 367px;
+    background-color: #FFBA73;
+    border: none;
+    border-radius: 40px;
+}
+.button-text {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #216477;
+
+    display: flex;
+    gap: 20px;
+    padding: 8px 28px
+}
+
+footer.footer {
+    text-align: center;
+    font-size: 40px; /* not template */
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #216477;
+    padding: 30px;
+    background-color: #89C2D2;
+}
