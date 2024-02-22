@@ -1,13 +1,9 @@
 package com.aiworkshop.AiWorkShop.Model;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
-import java.util.TreeSet;
 
 import com.aiworkshop.AiWorkShop.Exceptions.IncorrectEmail;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
