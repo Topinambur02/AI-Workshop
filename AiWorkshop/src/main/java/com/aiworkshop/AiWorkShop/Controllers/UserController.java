@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.aiworkshop.AiWorkShop.Exceptions.IncorrectEmail;
 import com.aiworkshop.AiWorkShop.Exceptions.ResourceNotFoundException;
 import com.aiworkshop.AiWorkShop.Model.User;
 import com.aiworkshop.AiWorkShop.Repository.UserRepository;
@@ -54,7 +55,7 @@ public class UserController {
     // update user
 
     @PutMapping("users/{id}")
-    public ResponseEntity<User> updateUser(@PathVariable(value = "id") Long userId, @RequestBody User userdDetails) throws ResourceNotFoundException {
+    public ResponseEntity<User> updateUser(@PathVariable(value = "id") Long userId, @RequestBody User userdDetails) throws ResourceNotFoundException, IncorrectEmail {
         User user = userRepository.findById(userId).orElseThrow(
             () -> new ResourceNotFoundException("User not found for this id :: " + userId));
 
@@ -63,6 +64,7 @@ public class UserController {
         user.setPassword(userdDetails.getPassword());
 
         return ResponseEntity.ok(this.userRepository.save(user));
+
     }
 
     // delete user
