@@ -217,10 +217,12 @@ article p {
 .section_block {
     background: white;
     padding: 32px 32px 0 32px;
+    border-radius: 10px;
 }
 
 .article_image {
     height: 315px;
+    border-radius: 10px;
 }
 
 .title_block {
