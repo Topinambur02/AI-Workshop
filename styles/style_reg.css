@@ -1,0 +1,549 @@
+/* Сброс стандартных стилей HTML */
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* Убираем внутренние отступы */
+ul,
+ol {
+    padding: 0;
+}
+input:focus, textarea {
+    outline: none !important;
+}
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+form {
+    margin-block-end: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol{
+    list-style: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+button {
+    background: 0;
+    border: 0;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+textarea {
+    resize: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+b { font-weight: bold; }
+
+/* ------ Конец сброса стилей ------ */
+
+
+
+/* ------ Начало общих стилей ------ */
+
+h1 {
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-weight: bold;
+    font-size: 72px;
+    margin: 140px 0 32px 0;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+/* Шрифт Roboto черный */
+.r_b {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+/* Шрифт Roboto белый */
+.r_w {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+/* Шрифт Playfair Display черный */
+.pf_b {
+    font-family: "Playfair Display", serif;
+    color: black;
+}
+
+/* Шрифт Playfair Display белый */
+.pf_w {
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+body {
+    background-color: #15120E;
+}
+
+.nav_logo {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav ul:first-child li:first-child {
+    margin-left: 50px;
+}
+
+header hr {
+    color: #FF9900;
+}
+
+.ai_bg {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: right;
+    z-index: -1;
+}
+
+.ai_bg img {
+    position: absolute;
+}
+
+main {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.welcome p {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+article p {
+    color: black;
+}
+
+.articles_section {
+    margin-top: 90px;
+}
+
+.section_title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.section_block {
+    background: white;
+    padding: 32px 32px 0 32px;
+}
+
+.article_image {
+    height: 315px;
+}
+
+.title_block {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0 12px;
+}
+
+.title_block img {
+    width: 24px;
+    height: 28px;
+}
+
+.title {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text {
+    font-family: Playfair Display, serif;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 12px;
+}
+
+.small_text {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+/* Стили для просмотров, лайков, дизлайков */
+.stats {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats p {
+    margin-left: 6px;
+}
+
+.dislikes img {
+    position: absolute;
+    left: -24px;
+    top: 1px;
+}
+
+.dislikes {
+    margin-left: 24px;
+    position: relative;
+}
+
+.stats div {
+    display: flex;
+    align-items: center;
+}
+
+.likes {
+    margin-right: 12px;
+}
+
+/* Дальше идут стили для разного количества статей в одной строке (one_line, two_line, three_line) */
+.two_line, .three_line {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+/* Ограничение по количеству строк текста  */
+.three_line .text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.two_line .text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.one_line .text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* number of lines to show */
+    line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
+.two_line .title {
+    width: 568px;
+}
+.two_line article {
+    width: 592px;
+}
+
+.three_line .title {
+    width: 360px;
+}
+.three_line article {
+    width: 384px;
+}
+
+.one_line {
+    margin: 32px 0;
+}
+.one_line:first-child {
+    margin-top: 0;
+}
+
+.one_line .article_image {
+    height: 315px;
+    width: 607px;
+}
+.one_line article {
+    display: flex;
+    width: 1216px;
+}
+.one_line .content {
+    width: 577px;
+    height: 315px;
+    margin-right: 32px;
+    position: relative;
+}
+.one_line .title_block {
+    margin-top: 0;
+}
+.one_line .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section hr {
+    color: #828282;
+}
+section hr:last-child {
+    color: white;
+}
+
+.register {
+    position: absolute;
+    width: 833px;
+    height: 354px;
+    left: 353px;
+    top: 436px;
+}
+
+.login {
+    width: 68px;
+    height: 36px;
+    left: 353px;
+    top: 436px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+}
+
+.email {
+    width: 60px;
+    height: 36px;
+    left: 353px;
+    top: 562px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+}
+
+.pass {
+    width: 60px;
+    height: 36px;
+    left: 353px;
+    top: 562px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+}
+
+.password {
+    width: 84px;
+    height: 36px;
+    left: 353px;
+    top: 688px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+}
+
+.register {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    width: 833px;
+    height: 354px;
+    left: 353px;
+    top: 436px;
+
+
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+.password_access {
+    background-color: #15120E;
+    border: 1px solid #FF9900;
+    width: 400px;
+    height: 60px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.input_text {
+    /* Group 45 */
+    background-color: #15120E;
+    border: 1px solid #FF9900;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: 400px;
+    height: 60px;
+    left: 786px;
+    top: 730px;
+    margin-bottom: 24px;
+}
+
+input {
+    width: 250px;
+    background-color: #282928;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.button1 {
+    width: 200px;
+    height: 60px;
+    background-color: #FF9900;
+    margin-top: 170px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.button2 {
+    width: 200px;
+    height: 60px;
+    background-color: #FF9900;
+    margin-top: 277.5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.pass_ac {
+    margin-bottom: 6px;
+    margin-top: 24px;
+    width: 272px;
+    height: 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.column2 {
+    margin-left: 33px;
+}
+
+
+.login_email {
+    margin-top: 115px;
+
+    width: 181px;
+    height: 36px;
+    left: 353px;
+    top: 499px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+
+
+}
