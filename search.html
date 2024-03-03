@@ -39,17 +39,37 @@
   <div class="ai_bg">
     <img src="img/ai_bg.svg" alt="Иллюстрация на заднем фоне страницы">
   </div>
+
   <main>
     <section class="articles_section">
       <div class="section_block">
-        <div class="search_wrapper">
-          Статьи по запросу:
-          <div class="searchbar">
-            <input class="search_input" type="text" placeholder="Поиск статей">
-            <button class="search_button" onclick="alert('Эта функция еще в разработке')"><img src="img/search.svg" height="24px" alt="Поиск"></button>
+        <div class="search_section">
+          <div class="search_wrapper">
+            <label class="search_label">Статьи по запросу:</label>
+            <div class="searchbar">
+              <input class="search_input" type="text" placeholder="Поиск статей">
+              <button class="search_button" onclick="alert('Эта функция еще в разработке')"><img src="img/search.svg" height="24px" alt="Поиск"></button>
+            </div>
+            <hr>
+            <div class="search_info">
+              <div class="search_info_item">
+                <label class="search_info_name">Тема:</label><span id="search_info_topik" class="search_info_content">Нейросети</span>
+              </div>
+              <div class="search_info_item">
+                <label id="search_info_time_to_read" class="search_info_name">Время прочтения:</label><span class="search_info_content">10 мин</span>
+              </div>
+            </div>
           </div>
-          <hr>
+          <div class="sorting_wrapper">
+            <label class="sorting_label">Сортировка:</label>
+            <select class="sorting_order">
+              <option>По новизне</option>
+              <option>По популярности</option>
+              <option>По релевантности</option>
+            </select>
+          </div>
         </div>
+        
         <div class="one_line">
           <article>
             <div class="content">
