@@ -1,8 +1,5 @@
 package com.aiworkshop.AiWorkShop.Model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.aiworkshop.AiWorkShop.Exceptions.IncorrectEmail;
 
 import jakarta.persistence.Column;
@@ -10,12 +7,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Email;
+
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 @Table(name = "users", uniqueConstraints = {
@@ -44,6 +42,10 @@ public class User {
     // @OneToMany
     // @JoinColumn(name = "user_id")
     // List<Post> posts = new ArrayList<>();
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 
     public User() {}
 
