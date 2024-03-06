@@ -1,4 +1,4 @@
-package com.aiworkshop.AiWorkShop;
+package com.aiworkshop.AiWorkShop.Model;
 
 public enum Themes {
     THEME1,
