@@ -236,6 +236,7 @@ header>hr {
 
 .ai_bg img {
     position: absolute;
+    user-select: none;
 }
 
 main {
