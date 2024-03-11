@@ -52,6 +52,12 @@
     letter-spacing: 0em;
     text-align: left;
 }
+.search_input:-webkit-autofill {
+    border-radius: 10px;
+}
+.search_input:-webkit-autofill-hover {
+    border-radius: 10px;
+}
 .search_button {
     height: 42px;
     width: 42px;
