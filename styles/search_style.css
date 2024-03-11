@@ -32,7 +32,7 @@
     text-align: left;
 }
 .search_wrapper {
-    width: 551px;
+    width: auto;
 }
 .searchbar {
     display: flex;
@@ -42,7 +42,7 @@
     margin: 6px 0;
 }
 .search_input {
-    width: 520px;
+    width: 100%;
     border: none;
 
     font-family: Roboto;
@@ -65,10 +65,14 @@
 }
 .search_info {
     display: flex;
-    justify-content: space-between;
-    width: 400px;
+    justify-content: left;
+    width: 100%;
+    gap: 58px;
 
     margin-top: 26px;
+}
+.searchbar {
+    min-width: 551px
 }
 .search_info_name {
     font-family: Roboto;
