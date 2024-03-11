@@ -2,7 +2,7 @@
     width: 1920px;
     height: 1080px;
     max-width: max-content;
-
+    border-radius: 10px;
 }
 
 .banner{
@@ -16,6 +16,7 @@
 
 .banner__heading{
     position: absolute;
+    border-radius: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -31,6 +32,7 @@
 }
 
 .articles__contaier{
+    border-radius: 10px;
     background-color: white;
     width: 1280px;
     height: 1432px;
@@ -79,6 +81,7 @@
 
 .comment{
     width: 1280px;
+    border-radius: 10px;
     height: 480px;
     background-color: white;
     margin-top: 30px;
@@ -187,6 +190,7 @@
 
 .comment__button{
     font-family: Roboto, sans-serif;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
