@@ -23,12 +23,12 @@
       </ul>
       <ul>
         <li>
-          <div class="header_searchbar">
-            <div class="header_searchbar_inpcontainer">
-              <input class="header_search_input" type="text" placeholder="Введите ваш запрос">
+          <div id="header_searchbar" class="header_searchbar">
+            <div id="header_searchbar_input_container" class="header_searchbar_input_container">
+              <input id="header_search_input" class="header_search_input" type="text" placeholder="Введите ваш запрос" autocomplete="off">
               <hr>
             </div>
-            <button class="header_search_button" onclick="alert('Эта функция еще в разработке')">
+            <button id="header_input_button" class="header_search_button">
               <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.8499 11.4783C22.8499 17.3274 17.9486 22.1141 11.8462 22.1141C5.7437 22.1141 0.842391 17.3274 0.842391 11.4783C0.842391 5.62909 5.7437 0.842391 11.8462 0.842391C17.9486 0.842391 22.8499 5.62909 22.8499 11.4783Z" stroke="white" stroke-width="1.68478"></path>
                 <path d="M32.4047 33.596C32.7339 33.9248 33.2673 33.9245 33.596 33.5953C33.9248 33.2661 33.9245 32.7327 33.5953 32.404L32.4047 33.596ZM18.6547 19.8631L32.4047 33.596L33.5953 32.404L19.8453 18.6711L18.6547 19.8631Z" fill="white"></path>
@@ -53,7 +53,7 @@
           <div class="search_wrapper">
             <label class="search_label">Статьи по запросу:</label>
             <div class="searchbar">
-              <input class="search_input" type="text" placeholder="Поиск статей">
+              <input id="search_input" class="search_input" type="text" placeholder="Поиск статей">
               <button class="search_button" onclick="alert('Эта функция еще в разработке')"><img src="img/search.svg" height="24px" alt="Поиск"></button>
             </div>
             <hr>
@@ -260,6 +260,6 @@
   </main>
 
   <!-- import scripts -->
-  <script src="js/basic_scripts.js"></script>
+  <script src="js/search.js"></script>
 </body>
 </html>

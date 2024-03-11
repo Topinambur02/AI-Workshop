@@ -173,22 +173,26 @@ nav ul li {
 
 .header_searchbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
-    height: min-content;
 
     gap: 8px;
-    width: 29.5vw;
+    width: 29.8vw;
+    height: 700px; /* безопасная область для видимости строки поиска */
 }
-.header_searchbar_inpcontainer {
+.header_searchbar_input_container {
     display: flex;
     height: auto;
     justify-content: space-between;
     flex-direction: column;
-    
-    width: 100%;
+
+    /* нужно для того, чтобы поиск был скрыт перед анимацией */
+    opacity: 0;
+    width: 0%;
 }
-.header_search_input {
+
+input.header_search_input {
+    opacity: 0;
     padding: 7px;
     font-family: Roboto;
     font-size: 16px;
@@ -197,12 +201,18 @@ nav ul li {
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
-
+    
     border: none;
     background-color: transparent;
 }
 input.header_search_input::placeholder {
     color: #ffffff98;
+}
+input.header_search_input:-webkit-autofill {
+    border-radius: 10px 10px 0 0;
+}
+input.header_search_input:-webkit-autofill-hover {
+    border-radius: 10px 10px 0 0;
 }
 .header_search_button:hover {
     cursor: pointer;

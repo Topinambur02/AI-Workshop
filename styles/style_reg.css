@@ -78,6 +78,7 @@ form {
 .password_access {
     background-color: #15120E;
     border: 1px solid #FF9900;
+    border-radius: 10px;
     width: 400px;
     height: 60px;
     font-family: 'Roboto';
@@ -85,12 +86,14 @@ form {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    padding: 10px;
 }
 
 .input_text {
     /* Group 45 */
     background-color: #15120E;
     border: 1px solid #FF9900;
+    border-radius: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -103,12 +106,9 @@ form {
     margin-bottom: 24px;
 }
 
-input {
-    width: 250px;
-    background-color: #282928;
+input.input_text {
     color: #fff;
     padding: 10px;
-    border: 1px solid;
     box-sizing: border-box;
 }
 
@@ -116,6 +116,7 @@ input {
     width: 200px;
     height: 60px;
     background-color: #FF9900;
+    border-radius: 10px;
     margin-top: 168px;
     font-family: 'Roboto';
     font-style: normal;
@@ -129,6 +130,7 @@ input {
     width: 200px;
     height: 60px;
     background-color: #FF9900;
+    border-radius: 10px;
     margin-top: 251px;
     font-family: 'Roboto';
     font-style: normal;
