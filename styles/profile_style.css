@@ -1,0 +1,29 @@
+.button1 {
+    margin-top: 0;
+}
+.change_profile_picture_area {
+    margin-top: 42px;
+    cursor: pointer;
+}
+.profile_picture {
+    /* display: block; */
+    width: 312px;
+    height: 312px;
+    object-position: center;
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+.profile_picture_text {
+    display: block;
+    margin-top: 12px;
+    
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: underline;
+    color: #ffffff;
+}

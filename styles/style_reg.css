@@ -124,6 +124,7 @@ input.input_text {
     font-size: 16px;
     line-height: 150%;
     color: #000000;
+    cursor: pointer;
 }
 
 .button2 {
@@ -138,6 +139,7 @@ input.input_text {
     font-size: 16px;
     line-height: 150%;
     color: #000000;
+    cursor: pointer;
 }
 
 .pass_ac {
