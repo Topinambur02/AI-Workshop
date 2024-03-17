@@ -178,25 +178,8 @@ nav ul li {
     align-items: center;
 
     gap: 8px;
-    width: 526px;
+    width: calc(50vw - 130px - 50px - 43.03px - 50px - 113px - 50px);
     height: 700px; /* безопасная область для видимости строки поиска */
-}
-
-@media (max-width: 1919px) {
-    .header_searchbar {
-        width: 19.8vw;
-    }
-}
-@media (max-width: 1439px) {
-    .header_searchbar {
-        width: 12.8vw;
-    }
-}
-@media (max-width: 1279px) {
-    .header_searchbar {
-        width: 3.5vw;
-        
-    }
 }
 .header_searchbar_input_container {
     display: flex;
