@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style_reg.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Главная</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="nav_logo" src="img/nav_logo.svg" alt="Логотип Ai-Workshop"></a>
+    <nav class="r_w">
+      <ul>
+        <li><a href="#">ПОПУЛЯРНЫЕ СТАТЬИ</a></li>
+        <li><a href="#">ПОДПИСКА</a></li>
+        <li><a href="#">СТАТЬ АВТОРОМ</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="search.html">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.8499 11.4783C22.8499 17.3274 17.9486 22.1141 11.8462 22.1141C5.7437 22.1141 0.842391 17.3274 0.842391 11.4783C0.842391 5.62909 5.7437 0.842391 11.8462 0.842391C17.9486 0.842391 22.8499 5.62909 22.8499 11.4783Z" stroke="white" stroke-width="1.68478"/>
+              <path d="M32.4047 33.596C32.7339 33.9248 33.2673 33.9245 33.596 33.5953C33.9248 33.2661 33.9245 32.7327 33.5953 32.404L32.4047 33.596ZM18.6547 19.8631L32.4047 33.596L33.5953 32.404L19.8453 18.6711L18.6547 19.8631Z" fill="white"/>
+            </svg>
+          </a>
+        </li>
+        <li><a href="authorization.html">ВХОД</a></li>
+        <li><a href="registration.html">РЕГИСТРАЦИЯ</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+  <div class="ai_bg">
+    <img src="img/ai_bg.svg" alt="Иллюстрация на заднем фоне страницы">
+  </div>
+
+  <main>
+    <h1 class="pf_w">Авторизация</h1>
+
+    <div id="messageContainer"></div>
+
+    <div class="register">
+      <form id="authorizationForm">
+        <div class="column1">
+          <p class="login_email">Логин</p>
+          <input id="loginOrEmail" class="input_text" type="text" placeholder="Введите ваш логин.."> <br/>
+          <p class="pass">Пароль</p>
+          <input id="password" class="input_text" type="password" placeholder="Введите ваш пароль.."><br/>
+        </div>
+        <div class="column2">
+          <button class="button2">Отправить</button>
+        </div>
+      </form>
+    </div>
+
+  </main>
+  <script src="JS/authorization.js"></script>
+</body>
+</html>

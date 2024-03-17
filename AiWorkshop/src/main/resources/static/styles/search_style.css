@@ -1,0 +1,114 @@
+/* Стили для страницы поиска статей */
+.articles_section {
+    margin-top: 212px;
+    font: inherit;
+}
+.section_block {
+    font: inherit;
+}
+.text {
+    margin-bottom: 22px;
+}
+.one_line .content {
+    width: 551px;
+    height: 315px;
+    margin-right: 58px;
+    position: relative;
+}
+.one_line .article_image {
+    height: 315px;
+    width: 605px;
+}
+
+.search_section {
+    display: flex;
+    gap: 58px;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.search_wrapper {
+    width: 551px;
+}
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 6px 0;
+}
+.search_input {
+    width: 520px;
+    border: none;
+
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.search_button {
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.search_info_item {
+    display: flex;
+    gap: 6px;
+}
+.search_info {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+
+    margin-top: 26px;
+}
+.search_info_name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.search_info_content {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sorting_label {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    position: relative;
+}
+.sorting_order {
+    border: none;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    outline: none;
+}
+.sorting_wrapper {
+    padding-top: 36px; 
+}
