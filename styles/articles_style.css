@@ -1,17 +1,19 @@
+.ai_bg img {
+    margin-top: 27px;
+}
+
 .big-sreen-photo{
-    width: 1920px;
-    height: 1080px;
+    width: 100vw;
+    /* height: 1080px; */
     max-width: max-content;
     border-radius: 10px;
+    margin: 0 auto;
 }
 
 .banner{
     position: relative;
     margin-top: 66.5px;
-    width: 1920px;
-    height: 1080px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100vw;
 }
 
 .banner__heading{
