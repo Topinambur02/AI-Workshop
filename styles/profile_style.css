@@ -13,6 +13,10 @@ section.profile_content {
 .profile_tab_button {
     cursor: pointer;
     opacity: 0.4;
+    transition: opacity 0.3s cubic-bezier(0.22, 0.67, 0.35, 0.85);
+}
+.profile_tab_button:hover {
+    opacity: 0.8;
 }
 .tab_button_active {
     opacity: 1;
@@ -20,6 +24,7 @@ section.profile_content {
 .tab_underline {
     visibility: hidden;
     width: 0%;
+    transition: width 0.3s cubic-bezier(0.65, 0.01, 0.41, 1.02);
 }
 .tab_button_active .tab_underline {
     visibility: visible;
