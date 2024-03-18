@@ -6,6 +6,56 @@ main {
 section.profile_content {
     font: inherit;
 }
+.tabs_section {
+    display: flex;
+    gap: 24px;
+}
+.profile_tab_button {
+    cursor: pointer;
+    opacity: 0.4;
+}
+.tab_button_active {
+    opacity: 1;
+}
+.tab_underline {
+    visibility: hidden;
+    width: 0%;
+}
+.tab_button_active .tab_underline {
+    visibility: visible;
+    height: 2px;
+    border: none;
+    width: 100%;
+    background-color: black;
+}
+.profile_tab_button_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    height: 21px;
+
+    margin-bottom: 6px;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+
+.one_line article {
+    width: 100%;
+}
+.one_line .content {
+    height: 246px;
+}
+.one_line .article_image {
+    width: 362px;
+    height: 246px;
+}
 
 
 
