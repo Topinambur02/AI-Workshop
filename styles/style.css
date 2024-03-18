@@ -240,6 +240,20 @@ header>hr {
     user-select: none;
 }
 
+.main_button_style {
+    width: 200px;
+    height: 60px;
+    background-color: #FF9900;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    cursor: pointer;
+}
+
 main {
     width: 1280px;
     margin: 0 auto;

@@ -6,7 +6,6 @@
     cursor: pointer;
 }
 .profile_picture {
-    /* display: block; */
     width: 312px;
     height: 312px;
     object-position: center;
