@@ -85,3 +85,28 @@ function header_input_keyboard_listeners(event) {
         hideSearch();
     }
 }
+
+function myFunction(id) {
+    if (document.querySelector(".myDropdown" + id).classList.contains('show')) {
+        document.querySelector(".myDropdown" + id).classList.remove("show");
+        document.querySelector(".arrow" + id).style.transform = 'rotate(0deg)';
+    } else {
+        document.querySelector(".myDropdown" + id).classList.toggle("show");
+        document.querySelector(".arrow" + id).style.transform = 'rotate(180deg)';
+    }
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                document.querySelector(".arrow" + (i+1)).style.transform = 'rotate(0deg)';
+            }
+        }
+    }
+}

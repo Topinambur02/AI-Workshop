@@ -60,29 +60,47 @@
             <div class="search_info">
               <div class="search_info_item">
                 <label class="search_info_name">Тема:</label>
-                <select class="sorting_order">
-                  <option>Генерация текста</option>
-                  <option>Генерация картинок</option>
-                  <option>Генерация видео</option>
-                </select>
+                <div class="search_info_name dropdown">
+                  <div class="selection">
+                    <button onclick="myFunction('1')" class="dropbtn">Генерация текста</button>
+                    <img class="arrows arrow1" src="img/dropdown_arrow.svg" alt="">
+                  </div>
+                  <div class="myDropdown1 dropdown-content">
+                    <a href="#">Генерация текста</a>
+                    <a href="#">Генерация картинок</a>
+                    <a href="#">Генерация видео</a>
+                  </div>
+                </div>
               </div>
               <div class="search_info_item">
                 <label id="search_info_time_to_read" class="search_info_name">Время прочтения:</label>
-                <select class="sorting_order">
-                  <option>5 мин</option>
-                  <option>10 мин</option>
-                  <option>20 мин</option>
-                </select>
+                <div class="search_info_name dropdown">
+                  <div class="selection">
+                    <button onclick="myFunction('2')" class="dropbtn">5 мин</button>
+                    <img class="arrows arrow2" src="img/dropdown_arrow.svg" alt="">
+                  </div>
+                  <div class="myDropdown2 dropdown-content">
+                    <a href="#">5 мин</a>
+                    <a href="#">10 мин</a>
+                    <a href="#">20 мин</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="sorting_wrapper">
             <label class="sorting_label">Сортировка:</label>
-            <select class="sorting_order">
-              <option>По новизне</option>
-              <option>По популярности</option>
-              <option>По релевантности</option>
-            </select>
+            <div class="search_info_name dropdown">
+              <div class="selection">
+                <button onclick="myFunction('3')" class="dropbtn">По популярности</button>
+                <img class="arrows arrow3" src="img/dropdown_arrow.svg" alt="">
+              </div>
+              <div class="myDropdown3 dropdown-content">
+                <a href="#">По новизне</a>
+                <a href="#">По популярности</a>
+                <a href="#">По релевантности</a>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -268,6 +286,7 @@
         <hr>
     </section>
   </main>
+
 
   <!-- import scripts -->
   <script src="js/search.js"></script>

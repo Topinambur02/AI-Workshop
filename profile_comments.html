@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/profile_style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/main_logo.svg">
+  <title>Профиль</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="nav_logo" src="img/nav_logo.svg" alt="Логотип Ai-Workshop"></a>
+    <nav class="r_w">
+      <ul>
+        <li><a href="article.html">ПОПУЛЯРНЫЕ СТАТЬИ</a></li>
+        <li><a href="profile.html">ПОДПИСКА</a></li>
+        <li><a href="#">СТАТЬ АВТОРОМ</a></li>
+      </ul>
+      <ul>
+        <li>
+          <div id="header_searchbar" class="header_searchbar">
+            <div id="header_searchbar_input_container" class="header_searchbar_input_container">
+              <input id="header_search_input" class="header_search_input" type="text" placeholder="Введите ваш запрос" autocomplete="off">
+              <hr>
+            </div>
+            <button id="header_input_button" class="header_search_button">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.8499 11.4783C22.8499 17.3274 17.9486 22.1141 11.8462 22.1141C5.7437 22.1141 0.842391 17.3274 0.842391 11.4783C0.842391 5.62909 5.7437 0.842391 11.8462 0.842391C17.9486 0.842391 22.8499 5.62909 22.8499 11.4783Z" stroke="white" stroke-width="1.68478"></path>
+                <path d="M32.4047 33.596C32.7339 33.9248 33.2673 33.9245 33.596 33.5953C33.9248 33.2661 33.9245 32.7327 33.5953 32.404L32.4047 33.596ZM18.6547 19.8631L32.4047 33.596L33.5953 32.404L19.8453 18.6711L18.6547 19.8631Z" fill="white"></path>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li><a href="authorization.html">ВХОД</a></li>
+        <li><a href="registration.html">РЕГИСТРАЦИЯ</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+  <div class="ai_bg">
+    <img src="img/ai_bg.svg" alt="Иллюстрация на заднем фоне страницы">
+  </div>
+
+  <main>
+    <section class="profile_content">
+      <div class="section_block">
+        <div class="tabs_section">
+          <button id="saved_tab" class="profile_tab_button tab_button">
+            <div class="profile_tab_button_heading">
+              Закладки
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_70_1554" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_70_1554)">
+                <path d="M5.00006 21V5C5.00006 4.45 5.19589 3.97917 5.58756 3.5875C5.97923 3.19583 6.45006 3 7.00006 3H13.0001V5H7.00006V17.95L12.0001 15.8L17.0001 17.95V11H19.0001V21L12.0001 18L5.00006 21ZM17.0001 9V7H15.0001V5H17.0001V3H19.0001V5H21.0001V7H19.0001V9H17.0001Z" fill="#1C1B1F"/>
+                </g>
+              </svg>
+            </div>
+            <hr class="tab_underline">
+          </button>
+          <button id="liked_tab" class="profile_tab_button">
+            <div class="profile_tab_button_heading">
+              Понравившиеся
+              <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.9849 22H12.8676C12.0643 22.0008 11.2674 21.8498 10.5146 21.5543L7.30726 20.2987C7.1316 20.2282 6.9895 20.0873 6.91191 19.9068C6.83433 19.7263 6.82754 19.5208 6.89303 19.3351C6.95852 19.1494 7.09098 18.9984 7.26156 18.9151C7.43215 18.8319 7.62704 18.823 7.80381 18.8905L11.0107 20.146C11.6048 20.3787 12.2337 20.4974 12.8676 20.4966H16.9849C17.1639 20.4966 17.3357 20.4216 17.4623 20.2881C17.5889 20.1547 17.6601 19.9736 17.6601 19.7849C17.6601 19.5962 17.5889 19.4152 17.4623 19.2817C17.3357 19.1482 17.1639 19.0733 16.9849 19.0733C16.7958 19.0733 16.6145 18.9941 16.4809 18.8532C16.3472 18.7123 16.2721 18.5213 16.2721 18.322C16.2721 18.1228 16.3472 17.9317 16.4809 17.7908C16.6145 17.65 16.7958 17.5708 16.9849 17.5708H17.9566C18.1356 17.5708 18.3074 17.4958 18.434 17.3624C18.5606 17.2289 18.6318 17.0479 18.6318 16.8592C18.6318 16.6704 18.5606 16.4894 18.434 16.3559C18.3074 16.2225 18.1356 16.1475 17.9566 16.1475C17.7675 16.1475 17.5863 16.0684 17.4526 15.9275C17.3189 15.7866 17.2438 15.5955 17.2438 15.3963C17.2438 15.1971 17.3189 15.006 17.4526 14.8651C17.5863 14.7242 17.7675 14.6451 17.9566 14.6451H18.9278C19.0614 14.6451 19.192 14.6034 19.303 14.5252C19.4141 14.447 19.5007 14.3358 19.5518 14.2058C19.6029 14.0757 19.6163 13.9326 19.5902 13.7945C19.5641 13.6565 19.4998 13.5296 19.4053 13.4301C19.3428 13.3637 19.2684 13.3111 19.1864 13.2754C19.1044 13.2396 19.0165 13.2214 18.9278 13.2218C18.7388 13.2218 18.5575 13.1426 18.4238 13.0017C18.2902 12.8609 18.2151 12.6698 18.2151 12.4705C18.2151 12.2713 18.2902 12.0802 18.4238 11.9394C18.5575 11.7985 18.7388 11.7193 18.9278 11.7193H19.8995C20.0329 11.7189 20.1631 11.6768 20.2738 11.5984C20.3845 11.52 20.4708 11.4088 20.5216 11.2789C20.5724 11.1489 20.5856 11.006 20.5594 10.8682C20.5333 10.7303 20.469 10.6037 20.3747 10.5044C20.3125 10.4382 20.2384 10.3857 20.1569 10.3499C20.0753 10.314 19.9879 10.2956 19.8995 10.2955H13.1693C13.0453 10.2957 12.9234 10.2617 12.8156 10.197C12.7078 10.1323 12.618 10.0391 12.5549 9.92652C12.4918 9.81398 12.4576 9.68603 12.4558 9.55532C12.454 9.42461 12.4845 9.29566 12.5445 9.18122C12.761 8.7182 12.9085 8.22274 12.9816 7.71233C13.1427 6.61706 12.9441 5.62695 12.3915 4.76956C12.3203 4.66277 12.2188 4.5826 12.1016 4.54063C11.9844 4.49867 11.8575 4.49709 11.7394 4.53612C11.6213 4.57515 11.518 4.65277 11.4445 4.75776C11.371 4.86274 11.331 4.98965 11.3305 5.12013C11.3537 7.6933 10.2257 9.56333 8.06847 10.5289C7.98198 10.5697 7.88865 10.5919 7.79393 10.5942C7.69921 10.5965 7.605 10.5788 7.51682 10.5423C7.42863 10.5058 7.34824 10.4511 7.28035 10.3815C7.21245 10.3118 7.15842 10.2286 7.1214 10.1367C7.08437 10.0448 7.06511 9.94597 7.06474 9.84611C7.06436 9.74625 7.08288 9.64732 7.11922 9.55509C7.15555 9.46286 7.20896 9.37919 7.27633 9.30898C7.3437 9.23876 7.42368 9.18341 7.51158 9.14616C8.40109 8.74551 9.04921 8.15705 9.43836 7.38931C9.75577 6.76279 9.91352 6.00457 9.90545 5.13566C9.89832 4.18612 10.4538 3.38482 11.3176 3.10136C12.1815 2.8179 13.0667 3.14042 13.5723 3.92569C14.7464 5.74665 14.5345 7.63671 14.2128 8.79409H19.8995C20.3735 8.79415 20.8336 8.96317 21.2049 9.27368C21.5762 9.58418 21.837 10.0179 21.9448 10.5044C22.0527 10.9909 22.0013 11.5015 21.7989 11.9533C21.5966 12.4051 21.2552 12.7715 20.8303 12.9929C21.0632 13.5176 21.0919 14.1176 20.9104 14.6644C20.7289 15.2112 20.3516 15.6614 19.8591 15.9186C20.0921 16.4435 20.1208 17.0436 19.9392 17.5905C19.7576 18.1375 19.3801 18.5877 18.8874 18.8449C19.0374 19.1823 19.1043 19.5541 19.0818 19.9259C19.0593 20.2978 18.9481 20.6577 18.7586 20.9722C18.5691 21.2868 18.3074 21.5459 17.9977 21.7255C17.688 21.9052 17.3403 21.9996 16.9868 22H16.9849Z" fill="black"/>
+                <path d="M7.79295 20.8877H3.71274C3.52371 20.8877 3.34242 20.8085 3.20876 20.6676C3.07509 20.5268 3 20.3357 3 20.1364V9.83825C3 9.63902 3.07509 9.44794 3.20876 9.30706C3.34242 9.16618 3.52371 9.08704 3.71274 9.08704H7.79295C7.98198 9.08704 8.16327 9.16618 8.29693 9.30706C8.4306 9.44794 8.50569 9.63902 8.50569 9.83825V20.1364C8.50569 20.3357 8.4306 20.5268 8.29693 20.6676C8.16327 20.8085 7.98198 20.8877 7.79295 20.8877ZM4.42691 19.3852H7.08021V10.5895H4.42548L4.42691 19.3852Z" fill="black"/>
+              </svg>
+            </div>
+            <hr class="tab_underline">
+          </button>
+          <button id="history_tab" class="profile_tab_button">
+            <div class="profile_tab_button_heading">
+              История просмотров
+            </div>
+            <hr class="tab_underline">
+          </button>
+          <button id="comments_tab" class="profile_tab_button tab_button_active">
+            <div class="profile_tab_button_heading">
+              Мои комментарии
+            </div>
+            <hr class="tab_underline">
+          </button>
+        </div>
+        <div class="comments-other-people">
+          <div class="comment__user">
+            <img src="img/avatar.svg" alt="" width="40" height="40">
+            <div class="full-comments">
+              <div class="username-and-time">
+                <p class="username"><b>Николай Cергеевич</b></p>
+                <p class="usertime">10 минут назад</p>
+              </div>
+              <p class="comment__content">Огромное спасибо сайту что выпускаете такие полезные статьи!</p>
+              <div class="likes-and-dislikes">
+                <div class="likes__comment">
+                  <img src="img/like.svg" alt="Иконка лайка">
+                  <p class="small_text">4 тыс.</p>
+                </div>
+                <div class="dislikes__comment">
+                  <img src="img/dislike.svg" alt="Иконка дизлайка">
+                  <p class="small_text">0.1 тыс.</p>
+                </div>
+                <div class="link_comment">
+                  <p class="small_text">Статья – <a href="">Как начать пользоваться ChatGPT?</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comments-other-people">
+          <div class="comment__user">
+            <img src="img/avatar.svg" alt="" width="40" height="40">
+            <div class="full-comments">
+              <div class="username-and-time">
+                <p class="username"><b>Николай Cергеевич</b></p>
+                <p class="usertime">10 минут назад</p>
+              </div>
+              <p class="comment__content">Огромное спасибо сайту что выпускаете такие полезные статьи!</p>
+              <div class="likes-and-dislikes">
+                <div class="likes__comment">
+                  <img src="img/like.svg" alt="Иконка лайка">
+                  <p class="small_text">4 тыс.</p>
+                </div>
+                <div class="dislikes__comment">
+                  <img src="img/dislike.svg" alt="Иконка дизлайка">
+                  <p class="small_text">0.1 тыс.</p>
+                </div>
+                <div class="link_comment">
+                  <p class="small_text">Статья – <a href="">Как начать пользоваться ChatGPT?</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comments-other-people">
+          <div class="comment__user">
+            <img src="img/avatar.svg" alt="" width="40" height="40">
+            <div class="full-comments">
+              <div class="username-and-time">
+                <p class="username"><b>Николай Cергеевич</b></p>
+                <p class="usertime">10 минут назад</p>
+              </div>
+              <p class="comment__content">Огромное спасибо сайту что выпускаете такие полезные статьи!</p>
+              <div class="likes-and-dislikes">
+                <div class="likes__comment">
+                  <img src="img/like.svg" alt="Иконка лайка">
+                  <p class="small_text">4 тыс.</p>
+                </div>
+                <div class="dislikes__comment">
+                  <img src="img/dislike.svg" alt="Иконка дизлайка">
+                  <p class="small_text">0.1 тыс.</p>
+                </div>
+                <div class="link_comment">
+                  <p class="small_text">Статья – <a href="">Как начать пользоваться ChatGPT?</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </div>
+    </section>
+    <section class="profile_info">
+      <h1 class="profile_info_heading">Профиль</h1>
+      <img id="profile_info_picture" class="profile_picture" src="img/profile-picture-placeholder.png" alt="Фотография профиля">
+      <div class="profile_info_details">
+        <div class="profile_info_details_text">
+          <p><label class="profile_info_details_text_label">Ваш логин:</label><span id="login" class="profile_info_details_text_value">login</span></p>
+          <p><label class="profile_info_details_text_label">Ваш email:</label><span id="email" class="profile_info_details_text_value">my.email@email.com</span></p>
+          <p><label class="profile_info_details_text_label">Ваш пароль:</label><span id="password" class="profile_info_details_text_value">************</span></p>
+        </div>
+        <button id="profile_change_profile_info" class="main_button_style">Изменить</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- import scripts -->
+  <script src="js/search.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

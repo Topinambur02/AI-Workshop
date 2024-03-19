@@ -35,6 +35,9 @@ function savedTab() {
         saved_tab.classList.add('tab_button_active')
         saved_tab.querySelector('hr').style.transition = 'width 0.3s cubic-bezier(0.65, 0.01, 0.41, 1.02) 0s'
         saved_tab.querySelector('hr').style.width = '100%'
+        setTimeout(() => (
+            window.location.href = 'profile.html'
+        ), 250)
     }
     catch (error) {
         console.log(error)
@@ -104,6 +107,9 @@ function commentsTab() {
         comments_tab.classList.add('tab_button_active')
         comments_tab.querySelector('hr').style.transition = 'width 0.3s cubic-bezier(0.65, 0.01, 0.41, 1.02) 0s'
         comments_tab.querySelector('hr').style.width = '100%'
+        setTimeout(() => (
+            window.location.href = 'profile_comments.html'
+        ), 250)
     }
     catch (error) {
         console.log(error)

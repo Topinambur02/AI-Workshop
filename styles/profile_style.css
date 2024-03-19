@@ -136,3 +136,132 @@ h1.profile_info_heading {
     line-height: 19px;
 }
 
+
+
+
+.comment{
+    width: 1280px;
+    border-radius: 10px;
+    height: 480px;
+    background-color: white;
+    margin-top: 30px;
+    padding: 0px 33px 0px 33px;
+}
+
+.comment__sort{
+    display: flex;
+    flex-direction: row;
+}
+
+.comment__sort-count{
+    display: flex;
+    flex-direction: row;
+    gap:40px ;
+    padding: 32px 0px 0px 0px;
+}
+
+.comment__sort-heading2{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.comment__sort-paragraph{
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.comment__input-field__enter{
+    border: none;
+    border-bottom: 1px black solid;
+    height: 25px;
+}
+
+.comment__enter{
+    display: flex;
+    gap: 12px ;
+    margin-top: 33px;
+}
+
+.comment__input-field__enter::placeholder{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+
+.comments-other-people p{
+    color: black;
+}
+
+.username{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.usertime{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.username-and-time{
+    display: flex;
+    gap: 5px ;
+}
+
+.likes-and-dislikes{
+    display: flex;
+    gap: 20px;
+}
+
+.likes-and-dislikes div{
+    display: flex;
+    align-items: center;
+}
+
+.comment__user{
+    display: flex;
+    gap: 12px;
+    /* width: 872px; */
+}
+.full-comments p{
+    margin-bottom: 10px;
+}
+
+.likes__comment img{
+    margin-top: -8px;
+}
+
+.comments-other-people{
+    margin-top: 24px;
+    width: 882px;
+}
+
+.comment__button{
+    font-family: Roboto, sans-serif;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    width: 200px;
+    height: 60px;
+    border: 1px black solid;
+    float: right;
+    position: relative;
+    top: -295px;
+    cursor: pointer;
+}
+
+.link_comment a {
+    font-weight: 600;
+    text-decoration: underline;
+}
